@@ -1,9 +1,19 @@
-import './App.css'
+import React from 'react'
+import Search from './components/Search/Search'
+import './App.scss'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Rick and Morty!</h1>
+    <div className="App container">
+      <div className="header__banner_image__container">
+        <img 
+          className="header__banner_image" 
+          src="src/image/rickandmorty_banner.png" 
+          alt="Rick and Morty banner"
+        />
+      </div>
+
+      <Search/>
     </div>
   )
 }
