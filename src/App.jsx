@@ -1,6 +1,6 @@
 import React from 'react'
 import Search from './components/Search/Search'
-import './App.scss'
+import './styles/App.scss'
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
       </div>
 
       <Search/>
+      <h1>Hello!!!</h1>
     </div>
   )
 }

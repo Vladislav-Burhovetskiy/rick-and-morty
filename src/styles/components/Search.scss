@@ -1,0 +1,25 @@
+.search {
+  margin: 0 auto;
+  max-width: 315px;
+
+  &_field {
+    width: 315px;
+    height: 56px;
+    padding-left: 50px;
+
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+
+    background-image: url(/src/image/leading_icon.png);
+    background-repeat: no-repeat;
+    background-position: center left 18px;
+  }
+
+  &_field:hover {
+    border-color: rgb(108, 249, 150);
+  }
+
+  &_field:focus {
+    border-color: black;
+  }
+}

@@ -1,13 +1,18 @@
 import React from 'react'
-import './Search.scss'
+import '../../styles/components/Search.scss'
 
 const Search = () => {
   return (
     <>
       <div className='search'>
-        <input className='search_field'>
-          {/* <img src="src/image/leading_icon.png" alt="Leading icon" /> */}
+        <input 
+          className='search_field'
+          type={'text'}
+          placeholder='Filter by name...'>
         </input>
+        {/* <button>
+          <img src="src/image/leading_icon.png" alt="Leading icon" />
+        </button> */}
       </div>
     </>
   )
