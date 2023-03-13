@@ -4,8 +4,10 @@ import Cards from './components/Cards/Cards'
 import './styles/App.scss'
 
 function App() {
+
+  let [search, setSearch] = useState("");
   let [fetchedData, updateFetchedData] = useState([]);
-  let api = `https://rickandmortyapi.com/api/character`;
+  let api = `https://rickandmortyapi.com/api/character/?name=${search}`;
 
   useEffect(() => {
     (async function(){
@@ -13,7 +15,7 @@ function App() {
       updateFetchedData(data);
     })()
   }, [api]);
-  // console.log(fetchedData.results);
+
   return (
     <div className="App container">
       <div className="header__banner_image__container">
@@ -24,7 +26,7 @@ function App() {
         />
       </div>
 
-      <Search />
+      <Search setSearch={setSearch} />
       <Cards results={fetchedData.results}/>
     </div>
   )

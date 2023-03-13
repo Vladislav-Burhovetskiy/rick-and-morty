@@ -1,18 +1,18 @@
 import React from 'react'
 import '../../styles/components/Search.scss'
 
-const Search = () => {
+const Search = ({ setSearch }) => {
   return (
     <>
       <div className='search'>
-        <input 
+        <input
+          onChange={event => {
+            setSearch(event.target.value)
+          }}
           className='search_field'
           type={'text'}
           placeholder='Filter by name...'>
         </input>
-        {/* <button>
-          <img src="src/image/leading_icon.png" alt="Leading icon" />
-        </button> */}
       </div>
     </>
   )
