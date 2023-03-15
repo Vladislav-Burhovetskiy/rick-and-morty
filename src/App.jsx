@@ -15,11 +15,11 @@ function App() {
   
   const [fetchedData, updateFetchedData] = useState([]);
   let api = `https://rickandmortyapi.com/api/character/?name=${search}`;
-  console.log(api)
   
   useEffect(() => {
     (async function(){
       let data = await fetch(api).then(res => res.json());
+      data.results.sort((a, b) => a.name.localeCompare(b.name));
       updateFetchedData(data);
     })()
   }, [api]);
@@ -35,7 +35,7 @@ function App() {
       </div>
 
       <Search setSearch={setSearch} />
-      <Cards results={fetchedData.results} />
+      <Cards results={fetchedData.results} search={search} />
     </div>
   )
 }
