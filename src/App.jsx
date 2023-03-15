@@ -4,11 +4,19 @@ import Cards from './components/Cards/Cards'
 import './styles/App.scss'
 
 function App() {
+  const [search, setSearch] = useState(() => {
+    const savedSearch = localStorage.getItem('search');
+    return savedSearch ? JSON.parse(savedSearch) : '';
+  });
 
-  let [search, setSearch] = useState("");
-  let [fetchedData, updateFetchedData] = useState([]);
+  useEffect(() => {
+    localStorage.setItem('search', JSON.stringify(search));
+  }, [search]);
+  
+  const [fetchedData, updateFetchedData] = useState([]);
   let api = `https://rickandmortyapi.com/api/character/?name=${search}`;
-
+  console.log(api)
+  
   useEffect(() => {
     (async function(){
       let data = await fetch(api).then(res => res.json());
@@ -27,7 +35,7 @@ function App() {
       </div>
 
       <Search setSearch={setSearch} />
-      <Cards results={fetchedData.results}/>
+      <Cards results={fetchedData.results} />
     </div>
   )
 }
