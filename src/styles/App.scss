@@ -1,18 +1,21 @@
+@import "./src/styles/index.scss";
+
 .container {
   margin: 0 auto;
   max-width: 375px;
   padding: 0 24px;
 
-  // @include onTablet {
-  //   max-width: 700px;
-  //   padding: 0 34px;
-  // }
+  @include onTablet {
+    max-width: 810px;
+    padding: 0 35px;
+    margin-bottom: 1800px;
+  }
 
-  // @include onDesktop {
-  //   max-width: 1170px;
-  //   padding: 0 55px;
-  // }
-
+  @include onDesktop {
+    max-width: 1100px;
+    padding: 0 55px;
+    margin-bottom: 1230px;
+  }
 }
 
 .header__banner_image {
@@ -24,5 +27,14 @@
     max-width: 315px;
     height: 105px;
 
+    @include onTablet {
+      max-width: 450px;
+      height: 150px;
+    }
+
+    @include onDesktop {
+      max-width: 600px;
+      height: 200px;
+    }
   }
 }
