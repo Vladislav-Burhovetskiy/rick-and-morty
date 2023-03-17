@@ -3,6 +3,7 @@
 .cards {
   @include onTablet {
     display: grid;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0 20px;
 
@@ -44,6 +45,10 @@
 
     &_notfind {
       margin-left: 28px;
+
+      @include onTablet {
+        width: 240px;
+      }
     }
     
     &__info {

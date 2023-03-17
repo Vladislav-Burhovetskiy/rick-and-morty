@@ -1,7 +1,8 @@
 import React from 'react'
 import './Cards.scss'
+import { NavLink } from 'react-router-dom';
 
-const Cards = ({ results, search }) => {
+const Cards = ({ results, search, page }) => {
   let displayResult;
 
   if(results) {
@@ -11,7 +12,11 @@ const Cards = ({ results, search }) => {
       const { id, name, image, species } = person;
       return (
         
-        <div key={id} className='cards__characters'>
+        <NavLink 
+          to={`${page}${id}`}
+          key={id}
+          className='cards__characters'
+        >
           <div className='cards__characters__image_container'>
             <img 
               src={image} 
@@ -23,7 +28,7 @@ const Cards = ({ results, search }) => {
             <h3 className='cards__characters__info_name'>{name}</h3>
             <p className='cards__characters__info_species'>{species}</p>
           </div>
-        </div>
+        </NavLink>
         
       )
     }) : <div className='cards__characters_notfind'>No characters with this name :/</div>
