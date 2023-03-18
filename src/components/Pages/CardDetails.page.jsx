@@ -24,7 +24,7 @@ export const CardDetails = () => {
             <NavLink className='card_details__link' to={"/rick-and-morty"}>
               <img 
                 className='card_details__link_image'
-                src="/src/image/arrow_back_24px.svg"
+                src="./image/arrow_back_24px.svg"
                 alt="Arrow back"
               />
               GO BACK</NavLink>
