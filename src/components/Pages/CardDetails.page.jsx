@@ -21,7 +21,7 @@ export const CardDetails = () => {
       <div className='container__card_details'>
         <dir className='card_details'>
           <div className='card_details__link_container'>
-            <NavLink className='card_details__link' to={"/"}>
+            <NavLink className='card_details__link' to={"/rick-and-morty"}>
               <img 
                 className='card_details__link_image'
                 src="/src/image/arrow_back_24px.svg"
