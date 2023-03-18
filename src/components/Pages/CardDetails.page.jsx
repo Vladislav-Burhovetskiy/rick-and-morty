@@ -21,10 +21,10 @@ export const CardDetails = () => {
       <div className='container__card_details'>
         <dir className='card_details'>
           <div className='card_details__link_container'>
-            <NavLink className='card_details__link' to={"/rick-and-morty"}>
+            <NavLink className='card_details__link' to={"/rick-and-morty/"}>
               <img 
                 className='card_details__link_image'
-                src={`${process.env.PUBLIC_URL}/images/arrow_back_24px.svg`}
+                src={`${process.env.PUBLIC_URL}/images/arrow_back_24px.png`}
                 alt="Arrow back"
               />
               GO BACK</NavLink>
