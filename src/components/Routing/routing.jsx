@@ -5,7 +5,7 @@ import { CardDetails } from '../Pages/CardDetails.page';
 
 export const routing = createBrowserRouter([
   {
-    path: "/",
+    path: "/rick-and-morty",
     element: <Outlet />,
     children: [
       {
@@ -13,7 +13,7 @@ export const routing = createBrowserRouter([
         element: < Main />
       },
       {
-        path: "/carddetails/:id",
+        path: "/rick-and-morty/carddetails/:id",
         element: <CardDetails />
       }
     ],
