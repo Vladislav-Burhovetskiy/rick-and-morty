@@ -29,7 +29,7 @@ export const Main = () => {
       <div className="header__banner_image__container">
         <img 
           className="header__banner_image" 
-          src=`./image/rickandmorty_banner.png?t=${new Date().getTime()}`
+          src={`./image/rickandmorty_banner.png?t=${new Date().getTime()}`}
           alt="Rick and Morty banner"
         />
       </div>
