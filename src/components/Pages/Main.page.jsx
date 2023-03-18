@@ -36,7 +36,7 @@ export const Main = () => {
 
       <Search setSearch={setSearch} />
       <Cards 
-        page="/carddetails/"
+        page="/rick-and-morty/carddetails/"
         results={fetchedData.results}
         search={search}
       />
