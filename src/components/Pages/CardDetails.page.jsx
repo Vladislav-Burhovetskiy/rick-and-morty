@@ -24,10 +24,11 @@ export const CardDetails = () => {
             <NavLink className='card_details__link' to={"/rick-and-morty/"}>
               <img 
                 className='card_details__link_image'
-                src="./image/arrow_back_24px.png"
+                src={process.env.PUBLIC_URL + '/image/arrow_back_24px.png'}
                 alt="Arrow back"
               />
-              GO BACK</NavLink>
+              GO BACK
+            </NavLink>
           </div>
           <div className='card_details__image_container'>
             <img
