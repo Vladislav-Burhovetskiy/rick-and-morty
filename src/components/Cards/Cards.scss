@@ -63,7 +63,7 @@
         line-height: 30px;
         letter-spacing: 0.15px;
 
-        color: rgba(0, 0, 0, 0.87);
+        color: $text-color-cards-name;
       }
 
       &_species {
@@ -72,7 +72,7 @@
         line-height: 21px;
         letter-spacing: 0.25px;
 
-        color: rgba(0, 0, 0, 0.6);
+        color: $text-color-cards-species;
         margin-bottom: 10px;
 
       }

@@ -18,7 +18,7 @@
     height: 56px;
     padding-left: 50px;
 
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 1px solid $border-search-color;
     border-radius: 8px;
 
     background-image: url(/src/image/leading_icon.png);
@@ -37,11 +37,11 @@
   }
 
   &_field:hover {
-    border-color: rgb(108, 249, 150);
+    border-color: $border-hover-color;
   }
 
   &_field:focus {
-    border-color: black;
+    border-color: $border-search-active-color;
     outline: none;
   }
 }

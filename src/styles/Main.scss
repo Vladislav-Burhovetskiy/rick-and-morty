@@ -3,17 +3,17 @@
 .container {
   margin: 0 auto;
   max-width: 375px;
-  padding: 0 24px;
+  padding: 0 $padding-container-mobile;
 
   @include onTablet {
     max-width: 810px;
-    padding: 0 35px;
+    padding: 0 $padding-container-tablet;
     margin-bottom: 1800px;
   }
 
   @include onDesktop {
     max-width: 1100px;
-    padding: 0 55px;
+    padding: 0 $padding-container-desktop;
     margin-bottom: 1230px;
   }
 }
