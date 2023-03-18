@@ -29,7 +29,7 @@ export const Main = () => {
       <div className="header__banner_image__container">
         <img 
           className="header__banner_image" 
-          src={process.env.PUBLIC_URL + '/image/rickandmorty_banner.png'} 
+          src='/image/rickandmorty_banner.png'
           alt="Rick and Morty banner"
         />
       </div>
